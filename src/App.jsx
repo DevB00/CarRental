@@ -6,11 +6,10 @@ import Models from "./scenes/ModelsPage";
 import TestimonialsPage from "./scenes/TestimonialsPage";
 import Team from "./scenes/TeamPage";
 import Contact from "./scenes/ContactPage";
-import './styles/index.scss';
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar  />
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="about" element={<About />} />

@@ -1,8 +1,10 @@
-import React from 'react'
-
+import homeBg from "../../images/home/home-bg.png"
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <img className='absolute hidden top-0 right-0 -z-10 sm:block' src={homeBg} alt="home-background" />
+
+    </div>
   )
 }
 
