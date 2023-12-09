@@ -8,7 +8,7 @@ import Team from "./scenes/TeamPage";
 import Contact from "./scenes/ContactPage";
 function App() {
   return (
-    <>
+    <div>
       <Navbar  />
       <Routes>
         <Route index path="/" element={<Home />} />
@@ -18,7 +18,7 @@ function App() {
         <Route path="team" element={<Team />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
