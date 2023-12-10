@@ -6,16 +6,32 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
-::-webkit-scrollbar-thumb {
-  background-color: #ff4d30;
-  border-radius: 12px;
+*::-webkit-scrollbar {
+  width: 10px;
+  width: 10px;
 }
-
-::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
   background-color: #ffffff;
 }
 
-::-webkit-scrollbar {
-  width: 12px;
+*::-webkit-scrollbar-track:hover {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #ff4d30;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #ff4d30;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #ff2525;
 }
