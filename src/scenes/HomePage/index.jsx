@@ -192,20 +192,20 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="mt-36 flex w-full max-w-[1300px] flex-col items-center gap-6 text-center">
+      <section className="mt-36 flex w-full max-w-[1300px] flex-col items-center  gap-6 text-center">
         <h2 className="text-2xl font-semibold">Vehicle Models</h2>
         <h3 className="text-[2.5rem] font-bold">Our rental Fleet</h3>
         <p className="max-w-[34rem] text-gray-500">
           Choose from a variety of our amazing vehicles to rent for your next
           adventure or business trip
         </p>
-        <div className="mt-5 flex w-full flex-col  gap-24  md:flex-row">
-          <div className="flex flex-col gap-4">
+        <div className="mt-5 flex min-h-[25rem] w-full flex-col gap-4 md:flex-row md:justify-between">
+          <div className="flex flex-col gap-3">
             {carsList.map((carName, index) => (
               <div>
                 <button
                   className={twMerge(
-                    `w-full p-4  text-left text-xl font-semibold transition-all duration-200 hover:bg-[#ff4d30] hover:text-white`,
+                    `w-full p-3.5 text-left text-xl font-semibold transition-all duration-200 hover:bg-[#ff4d30] hover:text-white`,
                     `${
                       selectedCar === carName
                         ? "bg-[#ff4d30] text-white"
@@ -222,35 +222,36 @@ const Home = () => {
               </div>
             ))}
           </div>
-          <div className="flex flex-col items-center gap-24 sm:flex-row">
-            <img className="w-full" src={carData.img} alt="car" />
-            <div>
-              <div className="w-[250px]">
-                <h4 className="bg-[#ff4d30] p-2 text-lg text-white">
-                  <span className="text-2xl font-bold">${carData.price}</span> /
-                  rent per day
-                </h4>
-                <div className="flex flex-col border-2 border-black">
-                  <p className="text-lg">Model | {carData.model}</p>
-                  <p className="text-lg">Mark | {carData.mark}</p>
-                  <p className="text-lg">Year | {carData.year}</p>
-                  <p className="text-lg">Doors | {carData.doors}</p>
-                  <p className="text-lg">Seats | {carData.seats}</p>
-                  <p className="text-lg">AC | {carData.air}</p>
-                  <p className="text-lg">
-                    Transmission | {carData.transmission}
-                  </p>
-                  <p className="text-lg">Fuel | {carData.fuel}</p>
-                </div>
-
-                <button className="mt-3 w-full bg-[#ff4d30] px-4 py-4 text-xl  font-semibold text-white shadow-xl transition duration-300 hover:bg-[#fa3f20]">
-                  RESERVE NOW
-                </button>
+          <div className="flex items-center justify-center">
+            <img src={carData.img} alt="car" />
+          </div>
+          <div className="flex w-full justify-center md:w-min">
+            <div className="w-[250px]">
+              <h4 className="bg-[#ff4d30] p-1 text-lg text-white">
+                <span className="text-2xl font-bold">${carData.price}</span> /
+                rent per day
+              </h4>
+              <div className="flex flex-col border-2 border-black">
+                <p className="py-1 text-lg">Model | {carData.model}</p>
+                <p className="py-1 text-lg">Mark | {carData.mark}</p>
+                <p className="py-1 text-lg">Year | {carData.year}</p>
+                <p className="py-1 text-lg">Doors | {carData.doors}</p>
+                <p className="py-1 text-lg">Seats | {carData.seats}</p>
+                <p className="py-1 text-lg">AC | {carData.air}</p>
+                <p className="py-1 text-lg">
+                  Transmission | {carData.transmission}
+                </p>
+                <p className="py-1 text-lg">Fuel | {carData.fuel}</p>
               </div>
+
+              <button className="mt-2 w-full bg-[#ff4d30] px-4 py-4 text-xl  font-semibold text-white shadow-xl transition duration-300 hover:bg-[#fa3f20]">
+                RESERVE NOW
+              </button>
             </div>
           </div>
         </div>
       </section>
+    
     </main>
   );
 };
