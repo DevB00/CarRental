@@ -27,7 +27,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="flex justify-center">
+    <nav className="flex justify-center px-6 py-8">
       {/* MOBILE */}
       <div className="flex w-full items-center justify-between md:hidden">
         <img className="w-[9rem]" src={Logo} alt="logo" />

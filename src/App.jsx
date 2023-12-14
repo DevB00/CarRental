@@ -8,7 +8,7 @@ import Team from "./scenes/TeamPage";
 import Contact from "./scenes/ContactPage";
 function App() {
   return (
-    <div className="px-6 py-8">
+    <div>
       <Navbar  />
       <Routes>
         <Route index path="/" element={<Home />} />
