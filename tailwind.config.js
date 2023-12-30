@@ -7,7 +7,10 @@ module.exports = {
       md: "1050px",
     },
     backgroundImage: {
-      "chooseUs": "url('./src/images/home/bg.png')",
+      "chooseUs": "url('./src/images/home/chooseBg.png')",
+    },
+    backgroundPosition: {
+      'c-p': '-220px 250px',
     },
   },
   plugins: [],

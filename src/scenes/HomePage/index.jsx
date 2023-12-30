@@ -4,7 +4,12 @@ import bookBg from "../../images/home/book-bg.png";
 import SelectCar from "../../images/home/icon1.png";
 import Contact from "../../images/home/icon2.png";
 import Drive from "../../images/home/icon3.png";
-import homeBg2 from "../../images/home/bg.png";
+import cross from "../../images/home/icon4.png";
+import inclusive from "../../images/home/icon5.png";
+import charges from "../../images/home/icon6.png";
+import chooseCars from "../../images/home/chooseCars.png";
+import harold from "../../images/home/harold.jpg";
+import ron from "../../images/home/ron.jpg";
 import { CAR_DATA } from "../../CarData";
 import {
   IconCalendarEvent,
@@ -12,8 +17,9 @@ import {
   IconChevronRight,
   IconCircleCheck,
   IconMapPinFilled,
+  IconQuote,
 } from "@tabler/icons-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 const Home = () => {
   const [selectedCar, setSelectedCar] = useState("Audi A1 S-Line");
@@ -255,7 +261,8 @@ const Home = () => {
           </div>
         </section>
       </div>
-      <div className="my-[180px] flex w-full flex-col gap-6 bg-[#2d2d2d] py-[70px] text-center text-white">
+
+      <div className="mt-[180px] flex w-full flex-col gap-6 bg-[#2d2d2d] px-5 py-[70px] text-center text-white">
         <h2 className="text-5xl font-bold">
           Save big with our cheap car rental!
         </h2>
@@ -264,9 +271,124 @@ const Home = () => {
           <span className="text-[#ff4d30]">24/7</span> Support.
         </p>
       </div>
-      <div className="mt-56 flex flex-col items-center px-6 py-8">
-        <section className="bg-chooseUs bg-white"></section>
-      </div>
+
+      <section className="bg-c-p mt-24 flex w-full flex-col items-center  bg-chooseUs bg-cover bg-no-repeat pb-20">
+        <div className="w-full max-w-[1300px]">
+          <div className="flex w-full items-center">
+            <img src={chooseCars} alt="cars" className="w-full" />
+          </div>
+          <div className="flex w-full flex-col items-center justify-between gap-14 p-4 text-center md:flex-row md:items-start md:text-start ">
+            <div className="flex flex-col items-center md:items-start">
+              <h2 className="text-2xl font-semibold">Why Choose Us</h2>
+              <div className="flex flex-col  text-[2.4rem] font-bold">
+                <p>Best valued deals </p>
+                <p>you will ever find</p>
+              </div>
+
+              <p className="my-5 max-w-[550px] text-[#706f7b]">
+                Discover the best deals you'll ever find with our unbeatable
+                offers. We're dedicated to providing you with the best value for
+                your money, so you can enjoy top-quality services and products
+                without breaking the bank. Our deals are designed to give you
+                the ultimate renting experience, so don't miss out on your
+                chance to save big.
+              </p>
+              <button className="flex w-44  bg-[#ff4d30] px-6 py-4 font-semibold text-white shadow-lg shadow-[#ff4d30] duration-200 hover:bg-[#f5391b]">
+                Find Details&nbsp;
+                <IconChevronRight />
+              </button>
+            </div>
+            <div className="flex flex-col gap-14">
+              <div className="flex flex-col items-center gap-2  sm:flex-row sm:items-start">
+                <img className="w-[110px]" src={cross} alt="car" />
+                <div className="flex max-w-[350px] flex-col gap-2">
+                  <h3 className="text-2xl font-bold">Cross Country Drive</h3>
+                  <p className="text-[0.99rem] text-[#706f7b]">
+                    Take your driving experience to the next level with our
+                    top-notch vehicles for your cross-country adventures.
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col items-center gap-2 sm:flex-row sm:items-start">
+                <img className="w-[110px]" src={inclusive} alt="car" />
+                <div className="flex max-w-[350px] flex-col gap-2">
+                  <h3 className="text-2xl font-bold">All Inclusive Pricing</h3>
+                  <p className="text-[0.99rem] text-[#706f7b]">
+                    Get everything you need in one convenient, transparent price
+                    with our all-inclusive pricing policy.
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col items-center gap-2 sm:flex-row sm:items-start ">
+                <img className="w-[110px]" src={charges} alt="car" />
+                <div className="flex max-w-[350px] flex-col gap-2">
+                  <h3 className="text-2xl font-bold">No Hidden Charges</h3>
+                  <p className="text-[0.99rem] text-[#706f7b]">
+                    Enjoy peace of mind with our no hidden charges policy. We
+                    believe in transparent and honest pricing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col items-center justify-center gap-10 bg-[#f8f8f8] px-6 py-20">
+        <div className="text-center">
+          <h2 className="text-2xl font-semibold">Reviewed by People</h2>
+          <h3 className="text-[2.55rem] font-bold">Client's Testimonials</h3>
+          <p className="mt-4 max-w-[730px] text-[0.95rem] text-[#706f7b]">
+            Discover the positive impact we've made on the our clients by
+            reading through their testimonials. Our clients have experienced our
+            service and results, and they're eager to share their positive
+            experiences with you.
+          </p>
+        </div>
+        <div className="flex gap-10">
+          <div className="max-w-[560px] flex-col bg-white px-8 py-16 shadow-2xl sm:max-h-[340px]">
+            <p className="text-xl font-medium">
+              "We rented a car from this website and had an amazing experience!
+              The booking was easy and the rental rates were very affordable. "
+            </p>
+            <div className="mt-8 flex items-center justify-between">
+              <div className="flex items-center justify-center gap-4">
+                <img
+                  className="h-20 w-20 rounded-full"
+                  src={harold}
+                  alt="Harold Botter"
+                />
+                <div className="flex flex-col">
+                  <p className="font-bold">Harold Botter</p>
+                  <p>Belgrade</p>
+                </div>
+              </div>
+
+              <IconQuote width={60} height={60} className="text-[#ff4d30]" />
+            </div>
+          </div>
+          <div className="hidden max-h-[340px] max-w-[560px] flex-col bg-white px-8 py-16 shadow-2xl sm:block">
+            <p className="text-xl font-medium">
+              "I've rented a car from this website and had an amazing experience!
+              The booking was easy and the rental rates were very affordable."
+            </p>
+            <div className="mt-8 flex items-center justify-between">
+              <div className="flex items-center justify-center gap-4">
+                <img
+                  className="h-20 w-20 rounded-full"
+                  src={ron}
+                  alt="Roni Rizzly"
+                />
+                <div className="flex flex-col">
+                  <p className="font-bold">Roni Rizzly</p>
+                  <p>Novi Sad</p>
+                </div>
+              </div>
+
+              <IconQuote width={60} height={60} className="text-[#ff4d30]" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
