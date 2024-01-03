@@ -416,8 +416,8 @@ const Home = () => {
               <span>1. What is special about comparing rental car deals?</span>
               <IconChevronDown />
             </label>
-            <div className="transition-max-h max-h-0 overflow-hidden duration-[0.5s] ease-in-out peer-checked:max-h-[300px]">
-              <p className="transition-max-h  px-14 py-8 text-[0.9rem] text-[#706f7b] duration-[0.5s] peer-checked:opacity-100">
+            <div className="max-h-0 overflow-hidden duration-[0.5s] ease-in-out peer-checked:max-h-[400px]">
+              <p className="px-14 py-8 text-[0.9rem] text-[#706f7b] duration-[0.5s] peer-checked:opacity-100">
                 Comparing rental car deals is important as it helps find the
                 best deal that fits your budget and requirements, ensuring you
                 get the most value for your money. By comparing various options,
@@ -441,7 +441,7 @@ const Home = () => {
               <span>2. How do I find the car rental deals?</span>
               <IconChevronDown />
             </label>
-            <div className="transition-max-h max-h-0 overflow-hidden duration-[0.5s] ease-in-out peer-checked:max-h-[300px]">
+            <div className="transition-max-h max-h-0 overflow-hidden duration-[0.5s] ease-in-out peer-checked:max-h-[400px]">
               <p className="transition-max-h  px-14 py-8 text-[0.9rem] text-[#706f7b] duration-[0.5s] peer-checked:opacity-100">
                 You can find car rental deals by researching online and
                 comparing prices from different rental companies. Websites such
@@ -465,7 +465,7 @@ const Home = () => {
               <span>3. How do I find such low rental car prices?</span>
               <IconChevronDown />
             </label>
-            <div className="transition-max-h max-h-0 overflow-hidden duration-[0.5s] ease-in-out peer-checked:max-h-[300px]">
+            <div className="transition-max-h max-h-0 overflow-hidden duration-[0.5s] ease-in-out peer-checked:max-h-[400px]">
               <p className="transition-max-h px-14 py-8 text-[0.9rem] text-[#706f7b] duration-[0.5s] peer-checked:opacity-100">
                 Book in advance: Booking your rental car ahead of time can often
                 result in lower prices. Compare prices from multiple companies:
