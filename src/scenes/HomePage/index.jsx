@@ -10,6 +10,8 @@ import charges from "../../images/home/icon6.png";
 import chooseCars from "../../images/home/chooseCars.png";
 import harold from "../../images/home/harold.jpg";
 import ron from "../../images/home/ron.jpg";
+import appstore from "../../images/home/appstore.svg";
+import playstore from "../../images/home/playstore.svg";
 import { CAR_DATA } from "../../CarData";
 import {
   IconCalendarEvent,
@@ -18,6 +20,7 @@ import {
   IconCircleCheck,
   IconMapPinFilled,
   IconQuote,
+  IconChevronDown,
 } from "@tabler/icons-react";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
@@ -272,7 +275,7 @@ const Home = () => {
         </p>
       </div>
 
-      <section className="bg-c-p mt-24 flex w-full flex-col items-center  bg-chooseUs bg-cover bg-no-repeat pb-20">
+      <section className="mt-24 flex w-full flex-col items-center bg-chooseUs  bg-cover bg-c-p bg-no-repeat pb-20">
         <div className="w-full max-w-[1300px]">
           <div className="flex w-full items-center">
             <img src={chooseCars} alt="cars" className="w-full" />
@@ -366,10 +369,11 @@ const Home = () => {
               <IconQuote width={60} height={60} className="text-[#ff4d30]" />
             </div>
           </div>
-          <div className="hidden max-h-[340px] max-w-[560px] flex-col bg-white px-8 py-16 shadow-2xl sm:block">
+          <div className="hidden max-h-[340px] max-w-[560px] flex-col bg-white px-8 py-16 shadow-2xl md:block">
             <p className="text-xl font-medium">
-              "I've rented a car from this website and had an amazing experience!
-              The booking was easy and the rental rates were very affordable."
+              "I've rented a car from this website and had an amazing
+              experience! The booking was easy and the rental rates were very
+              affordable."
             </p>
             <div className="mt-8 flex items-center justify-between">
               <div className="flex items-center justify-center gap-4">
@@ -386,6 +390,108 @@ const Home = () => {
 
               <IconQuote width={60} height={60} className="text-[#ff4d30]" />
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="flex w-full flex-col items-center justify-center gap-20 bg-faqBg bg-auto bg-c-p2 bg-no-repeat px-6  py-28">
+        <div className="flex flex-col items-center gap-6 bg-white text-center font-bold">
+          <h2 className="text-2xl">FAQ</h2>
+          <h3 className="text-4xl">Frequently Asked Questions</h3>
+          <p className="max-w-[750px] font-normal text-[#706f7b]">
+            Frequently Asked Questions About the Car Rental Booking Process on
+            Our Website: Answers to Common Concerns and Inquiries.
+          </p>
+        </div>
+        <div className="bg-white shadow-xl">
+          <div className="relative max-w-[800px] border-[0.5px] border-gray-200">
+            <input
+              type="checkbox"
+              id="input1"
+              className="peer absolute opacity-0"
+            />
+            <label
+              htmlFor="input1"
+              className="flex items-center justify-between px-14 py-6 text-lg font-medium transition duration-200 peer-checked:bg-[#ff4d30] peer-checked:text-white peer-checked:shadow-xl"
+            >
+              <span>1. What is special about comparing rental car deals?</span>
+              <IconChevronDown />
+            </label>
+            <div className="transition-max-h max-h-0 overflow-hidden duration-[0.5s] ease-in-out peer-checked:max-h-[300px]">
+              <p className="transition-max-h  px-14 py-8 text-[0.9rem] text-[#706f7b] duration-[0.5s] peer-checked:opacity-100">
+                Comparing rental car deals is important as it helps find the
+                best deal that fits your budget and requirements, ensuring you
+                get the most value for your money. By comparing various options,
+                you can find deals that offer lower prices, additional services,
+                or better car models. You can find car rental deals by
+                researching online and comparing prices from different rental
+                companies.
+              </p>
+            </div>
+          </div>
+          <div className="relative max-w-[800px] border-[0.5px] border-gray-200">
+            <input
+              type="checkbox"
+              id="input2"
+              className="peer absolute opacity-0"
+            />
+            <label
+              htmlFor="input2"
+              className="flex items-center justify-between px-14 py-6 text-lg font-medium transition duration-200 peer-checked:bg-[#ff4d30] peer-checked:text-white peer-checked:shadow-xl"
+            >
+              <span>2. How do I find the car rental deals?</span>
+              <IconChevronDown />
+            </label>
+            <div className="transition-max-h max-h-0 overflow-hidden duration-[0.5s] ease-in-out peer-checked:max-h-[300px]">
+              <p className="transition-max-h  px-14 py-8 text-[0.9rem] text-[#706f7b] duration-[0.5s] peer-checked:opacity-100">
+                You can find car rental deals by researching online and
+                comparing prices from different rental companies. Websites such
+                as Expedia, Kayak, and Travelocity allow you to compare prices
+                and view available rental options. It is also recommended to
+                sign up for email newsletters and follow rental car companies on
+                social media to be informed of any special deals or promotions.
+              </p>
+            </div>
+          </div>
+          <div className="relative max-w-[800px] border-[0.5px] border-gray-200">
+            <input
+              type="checkbox"
+              id="input3"
+              className="peer absolute opacity-0"
+            />
+            <label
+              htmlFor="input3"
+              className="flex items-center justify-between px-14 py-6 text-lg font-medium transition duration-200 peer-checked:bg-[#ff4d30] peer-checked:text-white peer-checked:shadow-xl"
+            >
+              <span>3. How do I find such low rental car prices?</span>
+              <IconChevronDown />
+            </label>
+            <div className="transition-max-h max-h-0 overflow-hidden duration-[0.5s] ease-in-out peer-checked:max-h-[300px]">
+              <p className="transition-max-h px-14 py-8 text-[0.9rem] text-[#706f7b] duration-[0.5s] peer-checked:opacity-100">
+                Book in advance: Booking your rental car ahead of time can often
+                result in lower prices. Compare prices from multiple companies:
+                Use websites like Kayak, Expedia, or Travelocity to compare
+                prices from multiple rental car companies. Look for discount
+                codes and coupons: Search for discount codes and coupons that
+                you can use to lower the rental price. Renting from an
+                off-airport location can sometimes result in lower prices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="flex items-center justify-center bg-[#f8f8f8] sm:bg-downloadBg sm:bg-c-p3 sm:bg-no-repeat">
+        <div className="flex w-full max-w-[1300px] flex-col items-center gap-6 px-6 py-28 text-center sm:items-start sm:text-start">
+          <h2 className="flex max-w-[550px] flex-col gap-3 text-[2.55rem] font-bold ">
+            Download our app to get most out of it
+          </h2>
+          <p className="max-w-[560px] text-[0.9rem] font-medium leading-6 text-[#706f7b]">
+            Thrown shy denote ten ladies though ask saw. Or by to he going think
+            order event music. Incommode so intention defective at convinced.
+            Led income months itself and houses you.
+          </p>
+          <div className="flex flex-wrap justify-center gap-8">
+            <img src={appstore} alt="appstore" />
+            <img src={playstore} alt="playstore" />
           </div>
         </div>
       </section>
