@@ -1,9 +1,15 @@
-import React from 'react'
-
+import Image from "../../components/Image";
+import BookACar from "../../components/BookACar";
 const Models = () => {
   return (
-    <div>Models</div>
-  )
-}
+    <>
+      <Image Page="Vehicle Models" />
+      <main className="mt-[17.5rem]">
+      
+      </main>
+      <BookACar />
+    </>
+  );
+};
 
-export default Models
+export default Models;

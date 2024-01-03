@@ -479,8 +479,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="flex items-center justify-center bg-[#f8f8f8] sm:bg-downloadBg sm:bg-c-p3 sm:bg-no-repeat">
-        <div className="flex w-full max-w-[1300px] flex-col items-center gap-6 px-6 py-28 text-center sm:items-start sm:text-start">
+      <section className="flex items-center justify-center bg-[#f8f8f8] sm:bg-downloadBg sm:bg-c-p3 px-6 sm:bg-no-repeat">
+        <div className="flex w-full max-w-[1300px] flex-col items-center gap-6 py-28 text-center sm:items-start sm:text-start">
           <h2 className="flex max-w-[550px] flex-col gap-3 text-[2.55rem] font-bold ">
             Download our app to get most out of it
           </h2>

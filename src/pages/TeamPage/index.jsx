@@ -1,7 +1,15 @@
-import React from "react";
-
+import Image from "../../components/Image";
+import BookACar from "../../components/BookACar";
 const Team = () => {
-  return <div>Team</div>;
+  return (
+    <>
+      <Image Page="Our Team" />
+      <main className="mt-[17.5rem]">
+      
+      </main>
+      <BookACar />
+    </>
+  );
 };
 
 export default Team;

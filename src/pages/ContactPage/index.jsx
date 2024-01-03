@@ -1,9 +1,15 @@
-import React from 'react'
-
+import Image from "../../components/Image";
+import BookACar from "../../components/BookACar";
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <>
+      <Image Page="Contact" />
+      <main className="mt-[17.5rem]">
+      
+      </main>
+      <BookACar />
+    </>
+  );
+};
 
-export default Contact
+export default Contact;
