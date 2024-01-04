@@ -191,7 +191,7 @@ const Home = () => {
         <div
           onClick={scrollToTop}
           className={twMerge(
-            `${goUp ? "fixed bottom-10 right-14 px-3 py-2 text-white text-xl font-semibold bg-[#ff4d30]" : "hidden"}`,
+            `${goUp ? "fixed bottom-10 right-14 z-30 px-3 py-2 text-white text-xl font-semibold bg-[#ff4d30] shadow-md" : "hidden"}`,
           )}
         >
           ^
