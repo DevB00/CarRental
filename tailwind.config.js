@@ -7,12 +7,12 @@ module.exports = {
       md: "1050px",
     },
     backgroundImage: {
-      chooseUs: "url('./src/images/home/chooseBg.png')",
-      faqBg: "url('./src/images/home/faqBg.png')",
-      downloadBg: "url('./src/images/home/downloadBg.png')",
-      bookingBg: "url('./src/images/components/bookBg.png')",
-      topImage: "url('./src/images/components/topImage.png')",
-      contactBg: "url('./src/images/contact/contactBg.png')",
+      chooseUs: "url('../src/images/home/chooseBg.png')",
+      faqBg: "url('../src/images/home/faqBg.png')",
+      downloadBg: "url('../src/images/home/downloadBg.png')",
+      bookingBg: "url('../src/images/components/bookBg.png')",
+      topImage: "url('../src/images/components/topImage.png')",
+      contactBg: "url('../src/images/contact/contactBg.png')",
     },
     backgroundPosition: {
       "c-p": "-220px 250px",
