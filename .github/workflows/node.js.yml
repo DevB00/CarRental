@@ -46,6 +46,6 @@ jobs:
 
       - name: Deploy with gh-pages
         run: |
-          npm deploy  # Assuming you have a "deploy" script defined in your package.json
+          npm run deploy  # Assuming you have a "deploy" script defined in your package.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
