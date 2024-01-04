@@ -46,7 +46,7 @@ const Contact = () => {
           </div>
           <div>
             <form
-              action=""
+              action="/"
               className="flex flex-col gap-6 text-center font-semibold md:text-start"
             >
               <label htmlFor="name">
