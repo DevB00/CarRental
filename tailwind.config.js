@@ -12,6 +12,7 @@ module.exports = {
       downloadBg: "url('./src/images/home/downloadBg.png')",
       bookingBg: "url('./src/images/components/bookBg.png')",
       topImage: "url('./src/images/components/topImage.png')",
+      contactBg: "url('./src/images/contact/contactBg.png')",
     },
     backgroundPosition: {
       "c-p": "-220px 250px",

@@ -16,13 +16,13 @@ const Footer = () => {
               className="flex font-semibold transition duration-150 hover:text-[#ff4d30]"
               href="tel:123456789"
             >
-              <IconPhoneCall /> (123) -456-789
+              <IconPhoneCall />&nbsp;(123) -456-789
             </a>
             <a
               className="flex font-semibold transition duration-150 hover:text-[#ff4d30]"
               href="mailto:carrental@gmail.com"
             >
-              <IconMail /> carrental@gmail.com
+              <IconMail />&nbsp;carrental@gmail.com
             </a>
             <a
               target="_blank"
