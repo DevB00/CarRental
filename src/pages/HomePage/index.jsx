@@ -22,7 +22,7 @@ import {
   IconQuote,
   IconChevronDown,
 } from "@tabler/icons-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
 const Home = () => {
   const [selectedCar, setSelectedCar] = useState("Audi A1 S-Line");
@@ -36,6 +36,27 @@ const Home = () => {
     "VW Passat CC",
   ];
 
+  const [goUp, setGoUp] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: (0, 0), behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    const onPageScroll = () => {
+      if (window.scrollY > 600) {
+        setGoUp(true);
+      } else {
+        setGoUp(false);
+      }
+    };
+    window.addEventListener("scroll", onPageScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onPageScroll);
+    };
+  }, []);
+
   return (
     <main>
       <div id="home" className="mt-56 flex flex-col items-center px-6 py-8">
@@ -44,6 +65,7 @@ const Home = () => {
           src={homeBg}
           alt="home-background"
         />
+
         <section className="relative flex w-full max-w-[1300px] justify-center text-center sm:justify-start sm:text-start">
           <div className="flex flex-col items-center  gap-4 sm:items-start">
             <h2 className="text-2xl font-bold">Plan your trip now</h2>
@@ -166,6 +188,14 @@ const Home = () => {
             </div>
           </form>
         </section>
+        <div
+          onClick={scrollToTop}
+          className={twMerge(
+            `${goUp ? "fixed bottom-10 right-14 px-3 py-2 text-white text-xl font-semibold bg-[#ff4d30]" : "hidden"}`,
+          )}
+        >
+          ^
+        </div>
 
         <section className="mt-36 flex w-full max-w-[1300px] flex-col items-center gap-6 text-center">
           <h2 className="text-2xl font-semibold">Plan your trip now</h2>
@@ -479,7 +509,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="flex items-center justify-center bg-[#f8f8f8] sm:bg-downloadBg sm:bg-c-p3 px-6 sm:bg-no-repeat">
+      <section className="flex items-center justify-center bg-[#f8f8f8] px-6 sm:bg-downloadBg sm:bg-c-p3 sm:bg-no-repeat">
         <div className="flex w-full max-w-[1300px] flex-col items-center gap-6 py-28 text-center sm:items-start sm:text-start">
           <h2 className="flex max-w-[550px] flex-col gap-3 text-[2.55rem] font-bold ">
             Download our app to get most out of it
