@@ -24,7 +24,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: npm install
-      - run: npm run build --if-present
       - run: npm run predeploy
 
   deploy:
@@ -41,11 +40,13 @@ jobs:
           node-version: 18
           cache: 'npm'
 
+      - name: Install dependencies
+        run: npm install
+
       - name: Install gh-pages
         run: npm install -g gh-pages
 
       - name: Deploy with gh-pages
-        run: |
-          npm run deploy  # Assuming you have a "deploy" script defined in your package.json
+        run: npm run deploy  # Assuming you have a "deploy" script defined in your package.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
